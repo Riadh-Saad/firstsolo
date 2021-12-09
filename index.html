@@ -5,11 +5,147 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
     <title>Document</title>
+   
 </head>
 <body>
 
+ <!-- This div ies for the first shown page!!! Both login and signup are on the same div -->
+    <div class="loginpage">  
+        <div class="sigin">
+            <input id="btnsignin" type="submit"> 
+                <input placeholder="youremail@domain.com" type="email" class="asd" id="email" name="email"/>
+                    <input placeholder="myPassword" type="password" class="asd" minlength="6" maxlength="12" id="password" name="password">
+                       
+                    </div>
+                <div class="signup">
+             <h3>First time ? Sign up Here</h3>
+        <input class="inputup" placeholder="Name and LastName" type="text" id="name" name="name">
+          <input class="inputup" placeholder="email@domain.com" type="email" id="emailN" name="email">
+            <input class="inputup" placeholder="password" type="password" id="passwordN" name="password">
+         
+      <select class="inputup" id="gendre" name="gendre">
+    <option value="Male">Male</option>
+         <option value="Female">Female</option>
+       </select>
+       <input type="submit" id="btnsignup">
+    </div>
 
+</div>
+
+<div class="questionpage">
+
+<p class="lesquestions">Which you fear most?</p>
+<input type="checkbox" id="aa" class="mca" name="ans1" value=1>
+<label for="ans1"> High places</label><br>
+<input type="checkbox"class="mca" name="ans2" value=2 >
+<label for="ans2"> Dark places </label><br>
+<input type="checkbox" class="mca" name="ans3" value=3>
+<label for="ans3"> Being alone</label><br>
+<input type="checkbox" class="mca" name="ans4" value=4 >
+<label for="ans4"> Big dogs</label><br><br><br><br>
+
+<p class="lesquestions">Which song speaks to you the most?</p>
+<input type="checkbox" class="mca" name="ans5" value=1>
+<label for="ans5"> School of Rock</label><br>
+<input type="checkbox" class="mca" name="ans6" value=2 >
+<label for="ans6"> They see me Rollin</label><br>
+<input type="checkbox" class="mca" name="ans7" value=3>
+<label for="ans7"> My heart will go on</label><br>
+<input type="checkbox" class="mca" name="ans8" value=4 >
+<label for="ans8"> Wake me up</label><br><br><br><br>
+
+<p class="lesquestions">If you could be anywhere in the world right now, where would you be?</p>
+<input type="checkbox" class="mca" name="ans9" value=1>
+<label for="ans9"> Amsterdam</label><br>
+<input type="checkbox" class="mca" name="ans10" value=2 >
+<label for="ans10"> Bombay</label><br>
+<input type="checkbox" class="mca" name="ans11" value=3>
+<label for="ans11"> Bali</label><br>
+<input type="checkbox" class="mca" name="ans12" value=4>
+<label for="ans12"> New York</label><br><br><br><br>
+
+<p class="lesquestions">What would you do if you won 1 million dollars $ ?</p>
+<input type="checkbox" class="mca" name="ans13" value=1>
+<label for="ans13"> Invest most of it</label><br>
+<input type="checkbox" class="mca" name="ans14" value=2>
+<label for="ans14"> Go wild</label><br>
+<input type="checkbox" class="mca" name="ans15" value=3>
+<label for="ans15"> Invest in yourself</label><br>
+<input type="checkbox" class="mca" name="ans16" value=4 >
+<label for="ans16"> Buy dreamy stuff</label><br><br><br><br>
+
+
+
+<p class="lesquestions">Which one can inspire you?</p>
+<input type="checkbox" class="mca" name="ans17" value=1>
+<label for="ans17"> Dalilama</label><br>
+<input type="checkbox"class="mca" name="ans18" value=2>
+<label for="ans18"> Ussian Bolt</label><br>
+<input type="checkbox" class="mca" name="ans19" value=3>
+<label for="ans19"> Ibn kholdoun</label><br>
+<input type="checkbox" class="mca" name="ans20" value=4>
+<label for="ans20"> Eminem</label><br><br><br><br>
+
+<p class="lesquestions">If you trade lives with someone who would it be?</p>
+<input type="checkbox" class="mca" name="ans21" value=1>
+<label for="ans21"> Elon Musk</label><br>
+<input type="checkbox" class="mca" name="22" value=2>
+<label for="22">Cristiano Ronaldo</label><br>
+<input type="checkbox" class="mca" name="23" value=3>
+<label for="23"> Neil Armstrong</label><br>
+<input type="checkbox" class="mca" name="24" value=4>
+<label for="24"> Thomas Edison</label><br><br><br><br>
+
+<p class="lesquestions">What do you want to do after you retire?</p>
+<input type="checkbox" class="mca" name="ans25" value=1>
+<label for="ans25"> Live on an island</label><br>
+<input type="checkbox" class="mca" name="26" value=2>
+<label for="26">Traveling</label><br>
+<input type="checkbox" class="mca" name="27" value=3>
+<label for="27"> Start another business</label><br>
+<input type="checkbox" class="mca" name="28" value=4>
+<label for="28">You keep your routine</label><br><br><br><br>
+
+<p class="lesquestions">If you have to give up an ability! What would it be? </p>
+<input type="checkbox"class="mca" name="ans29" value=1>
+<label for="ans29">Sight</label><br>
+<input type="checkbox" class="mca" name="30" value=2>
+<label for="30">Talking</label><br>
+<input type="checkbox" class="mca" name="31" value=3>
+<label for="31"> Sexuality</label><br>
+<input type="checkbox" class="mca" name="32" value=4>
+<label for="32">Having children</label><br><br><br><br>
+
+<p class="lesquestions">What upsets you the most?</p>
+<input type="checkbox" class="mca" name="ans33" value=1>
+<label for="ans33">Laziness</label><br>
+<input type="checkbox" class="mca" name="34" value=2>
+<label for="34">Untidiness</label><br>
+<input type="checkbox" class="mca" name="35" value=3>
+<label for="35">Waiting in the line</label><br>
+<input type="checkbox" class="mca" name="36" value=4>
+<label for="36">Injustice</label><br><br><br><br>
+
+<p class="lesquestions">What do you think about minorities(LGBTQ, Jews)? </p>
+<input type="checkbox"class="mca" name="ans37" value=1>
+<label for="ans37">I don't Beleive in diffrences</label><br>
+<input type="checkbox"class="mca" name="38" value=2>
+<label for="38">They're just there </label><br>
+<input type="checkbox" class="mca" name="39" value=3>
+<label for="39"> Too dramatic</label><br>
+<input type="checkbox" class="mca" name="40" value=4>
+<label for="40">They Should fight for their rights more</label><br><br><br><br>
+
+<input type="submit" id="ss" value="Submit">
+</div>
+<div class="resultpage">
+    <h1>Congratulations ! You are one step closer to meet intresting people like you </h1>
+    <p id="ciaobella"> </p>
+    <button id="finally">Reveal</button>
+
+</div>
 
 
 

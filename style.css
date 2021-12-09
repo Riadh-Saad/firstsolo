@@ -1,0 +1,47 @@
+.asd {
+    width: 20%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f186;
+  
+}
+#btnsignin{
+    width:10%;
+    padding: 10px;
+    background: #f1f1f125;
+    
+    
+}
+
+.inputup{
+    width: 20%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display:block;
+    border: none;
+    background: #f1f1f1;
+}
+#btnsignup{
+    width:10%;
+    padding: 10px;
+    background: #f1f1f125;
+    border-radius: 10px;
+    
+}
+.loginpage{
+    background-image: url(./bgp.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 65px;
+}
+
+.questionpage{
+    font-style: italic;
+    background-image: url();
+}
+#gendre{
+    width: 6.8cm;
+}
+
