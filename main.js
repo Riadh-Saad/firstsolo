@@ -48,7 +48,7 @@ var users = [           // this is the array where I store all users data
     }
 ]
 
-// I am hiding the other divs instead of making to html pages
+// I am hiding the other divs instead of making two html pages
   $(".questionpage").hide();
    $(".resultpage").hide();  
 
@@ -71,8 +71,8 @@ users.push(obj)
  return obj
 }
 
-$("#btnsignup").click(function(){
-  this.name=$("#name").val()
+$("#btnsignup").click(function(){           //this function to take the users info and store them in an array
+  this.name=$("#name").val()                    
   this.gender=$("#gender").val()
   this.active=true
   var nemail=$("#emailN").val()
@@ -91,11 +91,11 @@ $("#btnsignin").click(function () { //This is the signin button which it will ch
     var spassword=$("#password").val()
     var itshim = false 
     for(var i=0;i<myArr.length;i++){
-        if (semail===myArr[i]){
+        if (semail===myArr[i]&&spassword===myArr[1]){    //this condition to check credentials
           itshim = true
       users[users.length-1].active=true
   }} 
-    if(itshim === true ){
+    if(itshim === true ){                           //if true nxt slide will pop
         $(".loginpage").hide(); 
         $(".questionpage").show()
     }
@@ -103,26 +103,29 @@ $("#btnsignin").click(function () { //This is the signin button which it will ch
         alert("Wrong Credentials! please try again!")
     }});
 
+    var getMatches=users.filter(function(array){   //used filter to get specific people according to their Personalitycounter
+        return array.personalitycounter>users[users.length-1].personalitycounter})
+
+    function display (getMatches){
+    var concat=" "              //display function to get the info from the filtered array to use for the matching text
+    if(getMatches.length===1){return concat+getMatches[0].name+ " "+ getMatches[0].lastname}
+    else return getMatches[0].name +" "+getMatches[0].lastname+ "  "+display(getMatches.slice(1))
+    }
 
     $("#ss").click(function () {    //this is the submit button which it will submit your answers and 
    for(var i =0; i<users.length;i++){   // count its values 
         users[users.length-1].personalitycounter= users[users.length-1].personalitycounter +parseInt( $(".mca:checked")[i].value )
        $(".questionpage").hide()
        $(".resultpage").show()
+      var str= display(getMatches)             //in this div the result of matching will be displayed
+      $(".resultpage").text("Congratulations You've got "+getMatches.length+" matches. Dont waist your time and contact them  : "+str)
      }
     });
    
     
     
-    var getMatches=users.filter(function(array){ return array.personalitycounter>users[users.length-1].personalitycounter})
 
-    function display (getMatches){
-    var concat=" "
-    if(getMatches.length===1){return concat+getMatches[0].name+ " "+ getMatches[0].lastname}
-    else return getMatches[0].name +" "+getMatches[0].lastname+ "  "+display(getMatches.slice(1))
-    
-}
-// $("#finally").click(display())
+
 
 
 

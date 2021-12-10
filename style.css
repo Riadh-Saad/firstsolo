@@ -39,9 +39,24 @@
 
 .questionpage{
     font-style: italic;
-    background-image: url();
+    background-image: url(./Abstract-artistic-japanese-wallpaper.jpg);
 }
 #gendre{
     width: 6.8cm;
 }
+.resultpage{
+    font-style: italic; 
+  background-image: url(./fashionistasketch-808179.jpg); 
+  font-size: 40px;
+    display: block;
+    margin: -6px;
+    margin-bottom: -193px;
+    position: relative;
+    bottom: 7px;
+    height: 558px;
+}
 
+.qw{
+    /* width: 20%;
+    padding: 15px;   */
+}
